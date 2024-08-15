@@ -1,16 +1,16 @@
-import { StyleSheet, TouchableOpacity } from "react-native"
+import {Image , StyleSheet , TouchableOpacity } from "react-native"
 
 
 export const MoviesCard = (props) => {
     return (
-        <TouchableOpacity style={styles.img} source={props.movieUrl}>
-            <Image />
+        <TouchableOpacity >
+            <Image style={styles.img} source={props.movieURL} />
         </TouchableOpacity>
     );
 };
 
 const styles = StyleSheet.create({
     img: {
-        marginLeft: 20,
+        marginRight: 20,
     },
 });
